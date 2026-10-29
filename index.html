@@ -9,7 +9,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500..900&family=Familjen+Grotesk:wght@400..700&display=swap">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js" defer></script>
 </head>
@@ -18,17 +18,16 @@
 <svg width="0" height="0" class="sprite" aria-hidden="true">
   <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></symbol>
   <symbol id="icon-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></symbol>
-  <symbol id="icon-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></symbol>
   <symbol id="icon-open" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></symbol>
 </svg>
 
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-head">
-  <a class="monogram" href="#top" aria-label="Shaurya Kumar, back to top">SK</a>
+  <a class="mark" href="#top" aria-label="Shaurya Kumar, back to top">SK</a>
   <nav aria-label="Sections">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -36,70 +35,104 @@
 
 <main id="main">
   <section class="hero" id="top" aria-labelledby="hero-name">
-    <ol class="transcript" id="transcript">
-      <li><time>00:00.4</time><p>Hi, I'm <span id="hero-name">Shaurya Kumar</span>.</p></li>
-      <li><time>00:01.8</time><p>I'm an aspiring AI researcher studying computer science at the University of Maryland, College Park.</p></li>
-      <li><time>00:06.1</time><p>I focus on machine learning, and I build voice agents and sentiment models.</p></li>
-    </ol>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">See my projects</a>
-      <a class="btn" href="mailto:shaurya.kumar0912@gmail.com">Email me</a>
+    <div class="print">
+      <h1 class="name" id="hero-name"><span>Shaurya</span> <span>Kumar</span></h1>
+      <svg class="wave" id="wave" viewBox="0 0 960 200" preserveAspectRatio="none" aria-hidden="true"></svg>
+    </div>
+    <div class="hero-copy">
+      <p class="lede">Aspiring AI researcher studying computer science at the University of Maryland, College Park. I build voice agents and sentiment models, and I like work with a clear, noticeable impact on the issues around us.</p>
+      <div class="hero-actions">
+        <a class="btn btn-ink" href="#work">See my work</a>
+        <a class="btn" href="mailto:shaurya.kumar0912@gmail.com">Email me</a>
+      </div>
     </div>
   </section>
 
-  <section class="block" id="about" aria-labelledby="about-title">
-    <h2 id="about-title">About</h2>
-    <div class="prose">
-      <p>I'm a college freshman studying AI and machine learning. During my internship at <strong>OneByZero</strong>, I developed a voice-enabled AI agent for healthcare settings, integrating OpenAI's GPT, Coqui TTS and Deepgram.</p>
-      <p>I love working on projects that have a clear, noticeable impact on the issues around us today.</p>
-    </div>
-  </section>
+  <section class="section" id="work" aria-labelledby="work-title">
+    <h2 class="section-title" id="work-title">Work</h2>
 
-  <section class="block" id="projects" aria-labelledby="projects-title">
-    <h2 id="projects-title">Projects</h2>
-    <ul class="projects">
-      <li class="project project-lead">
-        <svg class="project-art wave" viewBox="0 0 240 48" aria-hidden="true"><path d="M0 24h12v-6h8v14h8v-22h8v30h8v-18h8v8h8v-26h8v38h8v-30h8v20h8v-10h8v4h8v-16h8v26h8v-34h8v40h8v-24h8v12h8v-6h8v2h8v-4h8v8h8v-2h28"/></svg>
-        <div class="project-head">
-          <h3>Voice Agent LLM</h3>
-          <p class="status">Completed</p>
-        </div>
-        <p class="project-text">An AI voice assistant for doctor's offices, built with OpenAI, Coqui TTS and Deepgram. It's a comparable model to the prototype I helped develop during my internship at OneByZero, where the goal was to automate patient interactions and streamline office workflows.</p>
-        <p class="stack">Python 3.11, OpenAI API, Coqui TTS, Deepgram, LLMs</p>
-        <p class="links">
-          <a href="https://github.com/OfficialShauryaKumar/Voice_Agent_LLM" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#icon-github"/></svg>View code</a>
-        </p>
-      </li>
-      <li class="project">
-        <svg class="project-art mood" viewBox="0 0 240 48" aria-hidden="true"><line x1="0" y1="34" x2="240" y2="34"/><circle cx="46" cy="34" r="4"/><circle cx="98" cy="34" r="3"/><circle cx="128" cy="34" r="5"/><circle cx="150" cy="34" r="6"/><circle cx="168" cy="34" r="4"/><circle cx="204" cy="34" r="5"/><line x1="150" y1="34" x2="150" y2="10"/><line x1="204" y1="34" x2="204" y2="18"/><line x1="46" y1="34" x2="46" y2="20"/></svg>
-        <div class="project-head">
-          <h3>SentimentFlow</h3>
-          <p class="status">Completed</p>
-        </div>
-        <p class="project-text">A stock signal engine. It scrapes Reddit, news and RSS feeds, scores the sentiment of each mention with VADER or FinBERT, then combines it with technicals and fundamentals into short- and long-term buy, sell and hold signals, served by a Flask API and a live dashboard.</p>
-        <p class="stack">Python 3.11, Flask, VADER, FinBERT, News API, SQLite</p>
+    <article class="project project-feature">
+      <div class="shots">
+        <img class="shot-desktop" src="assets/sentimentflow-desktop.jpg" width="1800" height="1125" alt="SentimentFlow's chatter map: twenty stock tickers as tiles sized by how often they are mentioned and coloured from bearish red to bullish green." loading="lazy">
+        <img class="shot-phone" src="assets/sentimentflow-phone.jpg" width="750" height="1624" alt="The same chatter map on a phone." loading="lazy">
+      </div>
+      <div class="project-copy">
+        <p class="kicker">Feb to Apr 2026, live</p>
+        <h3>SentimentFlow</h3>
+        <p>A stock signal engine. It reads financial news and Reddit, scores the sentiment of every mention, and combines it with price technicals and fundamentals into short- and long-term buy, hold and sell signals for 20 tickers.</p>
+        <p>Python and Flask on Render, with portfolio holdings and the daily sentiment history kept in Postgres so a backtest can compare the signals against the S&amp;P 500.</p>
+        <p class="stack">Python, Flask, VADER, FinBERT, yfinance, Postgres</p>
         <p class="links">
           <a href="https://sentimentflow.onrender.com" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#icon-open"/></svg>Open live app</a>
           <a href="https://github.com/OfficialShauryaKumar/sentimentFlow" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#icon-github"/></svg>View code</a>
         </p>
-      </li>
-    </ul>
+      </div>
+    </article>
+
+    <article class="project project-voice">
+      <ol class="pipeline" aria-label="How the voice agent handles a call">
+        <li><span class="step-name">Caller speaks</span><span class="step-tool">Microphone</span></li>
+        <li><span class="step-name">Speech to text</span><span class="step-tool">Deepgram</span></li>
+        <li><span class="step-name">Understand and reply</span><span class="step-tool">OpenAI GPT</span></li>
+        <li><span class="step-name">Text to speech</span><span class="step-tool">Coqui TTS</span></li>
+      </ol>
+      <div class="project-copy">
+        <p class="kicker">2025</p>
+        <h3>Voice Agent LLM</h3>
+        <p>An AI voice assistant for doctor's offices that answers calls, understands what the caller needs and books appointments through Google Calendar. It's a comparable model to the prototype I helped develop during my internship at OneByZero.</p>
+        <p class="stack">Python 3.11, OpenAI API, Deepgram, Coqui TTS, Google Calendar API</p>
+        <p class="links">
+          <a href="https://github.com/OfficialShauryaKumar/Voice_Agent_LLM" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#icon-github"/></svg>View code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="project project-small">
+      <p class="kicker">Jul to Aug 2023, AI Scholars Finance</p>
+      <h3>BART financial sentiment classifier</h3>
+      <p>Fine-tuned a BART transformer to classify financial language by sentiment, using a curated corpus of trader-report vocabulary and a labelling workflow that maps ambiguous market terms into clear categories.</p>
+    </article>
   </section>
 
-  <section class="block" id="skills" aria-labelledby="skills-title">
-    <h2 id="skills-title">Skills</h2>
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <h2 class="section-title" id="experience-title">Experience</h2>
+    <ol class="timeline">
+      <li>
+        <p class="when">Oct 2026 to now</p>
+        <div><h3>Heartbeat Edge Team Engineer <span class="org">BigThinkAI</span></h3>
+        <p>Training a model to recognise when to start and stop speaking from audio and visual cues, using a dataset I built from everyday conversations.</p></div>
+      </li>
+      <li>
+        <p class="when">Jun to Sep 2025</p>
+        <div><h3>Software Engineering Intern, AI and LLMs <span class="org">OneByZero</span></h3>
+        <p>Worked on a healthcare LLM that acts as a virtual front-desk clerk for medical offices, planned for release on AWS. On the Deepgram speech-to-text side, I helped cut the model's latency by 136 ms.</p></div>
+      </li>
+      <li>
+        <p class="when">Jul to Aug 2024</p>
+        <div><h3>Biotechnology Research Intern <span class="org">Rutgers University, Waksman Institute</span></h3>
+        <p>Cloned and analysed five duckweed protein samples. All five sequences were accepted and published in NCBI GenBank, and I presented applications for them at the program's research showcase.</p></div>
+      </li>
+    </ol>
+    <div class="education">
+      <p class="when">Expected May 2029</p>
+      <div><h3>B.S. Computer Science, AI and Machine Learning <span class="org">University of Maryland, College Park</span></h3>
+      <p>President's Scholar, awarded to the top 1% of Maryland students.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <h2 class="section-title" id="skills-title">Skills</h2>
     <dl class="skills">
-      <div><dt>Languages</dt><dd>Python, JavaScript</dd></div>
-      <div><dt>AI and ML</dt><dd>OpenAI API, LLM integration, voice processing, NLP</dd></div>
-      <div><dt>Frameworks</dt><dd>React, Node.js, Flask, Django</dd></div>
-      <div><dt>Tools</dt><dd>Git, GitHub, VS Code</dd></div>
-      <div><dt>Other</dt><dd>API integration, text-to-speech and speech-to-text, REST APIs, problem solving</dd></div>
+      <div><dt>Languages</dt><dd>Python, Java, JavaScript</dd></div>
+      <div><dt>AI and ML</dt><dd>PyTorch, LLM integration, OpenAI API, speech to text, text to speech, NLP</dd></div>
+      <div><dt>Data and web</dt><dd>NumPy, Pandas, Flask, Django, React, Node.js, REST APIs, Postgres</dd></div>
+      <div><dt>Tools</dt><dd>Git, GitHub, VS Code, Render</dd></div>
     </dl>
   </section>
 
-  <section class="block contact" id="contact" aria-labelledby="contact-title">
-    <h2 id="contact-title">Contact</h2>
-    <p class="prose">I'm open to internships, collaborations and interesting projects.</p>
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <h2 class="section-title" id="contact-title">Contact</h2>
+    <p class="lede">I'm looking for software and AI internships for Summer 2027, and I'm always up for an interesting project.</p>
     <a class="email" href="mailto:shaurya.kumar0912@gmail.com">shaurya.kumar0912@gmail.com</a>
     <p class="links">
       <a href="https://github.com/OfficialShauryaKumar" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#icon-github"/></svg>GitHub</a>
